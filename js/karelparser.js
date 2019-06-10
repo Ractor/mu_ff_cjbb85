@@ -34,8 +34,11 @@ export class KarelParser {
         return; // <-- continue
       }
 
+      if (!/[a-zA-Z0-9]+/.test(line)) {
+        this._errors.push({ part: line, line: i+1 });
+      
       // Question
-      if (line.trim().startsWith('Q:')) {
+      } else if (line.trim().startsWith('Q:')) {
         dialogue.push({ part: line.trim().slice('2').trim(), type: 'question' })
         this.counter_q++;
 

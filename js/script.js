@@ -44,14 +44,14 @@ function renderInfo() {
 
     error_display = `
       <div class="processing-status processing-error">
-        <p>Soubor obsahuje chyby na následujících řádcích:</p>
+        <p>Automatický analyzátor objevil následující chybné řádky:</p>
         <ul>${error_display}</ul>
       </div>
     `;
   } else {
     error_display = `
       <div class="processing-status processing-success">
-        <p>Soubor neobsahuje chybné řádky.</p>
+        <p>Automatický analyzátor neobjevil chybné řádky.</p>
       </div>
     `;
   }
