@@ -60,19 +60,24 @@ function renderInfo() {
       <p>Soubor byl načten</p>
       <table>
         <tr>
-          <td>Počet otázek</td>
+          <td>Počet dialogů:&nbsp;</td>
+          <td>${parser.dialogues.length}</td>
+        </tr>
+        <tr>
+          <td>Počet otázek:&nbsp;</td>
           <td>${parser.counter_q}</td>
         </tr>
         <tr>
-          <td>Počet odpovědí</td>
+          <td>Počet odpovědí:&nbsp;</td>
           <td>${parser.counter_a}</td>
         </tr>
         <tr>
-          <td><b>Celkem</b></td>
+          <td><b>Celkem bodů:&nbsp;</b></td>
           <td><b>${parser.counter_q + parser.counter_a}</b></td>
         </tr>
       </table>
       ${error_display}
+      <p><b>Tip:</b> K procházení můžete použít vyjma šipek níže také šipky na klávesnici.</p>
     `;
 
     document.getElementById('control').innerHTML = `
