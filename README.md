@@ -1,1 +1,1 @@
-Prohlížeč zápočtového úkolu do předmětu CJBB85 (jarní semestr 2019).
+Prohlížeč zápočtového úkolu do předmětu CJBB85.
